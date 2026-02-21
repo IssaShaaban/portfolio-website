@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Developer Portfolio</title>
+    <title>Cv</title>
     <link rel="stylesheet" href="style.css">
     <script src="navbar.js" defer></script>
 </head>
@@ -11,20 +11,16 @@
 
 <main-navbar></main-navbar>
 
-<header class="hero">
-    <div class="hero-content">
-        <br>
-        <img src="issa.jpeg" alt="Your Name" class="profile-pic">
-        <h1>Issa Shaaban</h1>
-        <p class="tagline">Software Engineer at Ovarro</p>
-
-        <div class="contact-links">
-            <a href="https://github.com/issashaaban" target="_blank" class="hero-btn">GitHub</a>
-            <a href="https://linkedin.com/in/issashaaban" target="_blank" class="hero-btn">LinkedIn</a>
-        </div>
+<header class="cv-intro">
+    <div class="intro-container">
+        <p>
+            A Software Engineer with a proven track record of delivering high-quality code
+            and resolving complex technical issues in Agile environments.
+            Proficient in <strong>Java, C/C++, and JavaScript</strong>, with deep experience
+            utilizing <strong>Linux, Docker, and Redis</strong> to optimize backend workflows.
+        </p>
     </div>
 </header>
-
 
 <section class="all-section">
     <div class="scroll-block">
@@ -42,9 +38,11 @@
         <h2 class="title">Work Experience </h2>
         <div style="margin-bottom: 5px;">
             <strong>Ovarro TS Ltd - Sheffield, UK</strong><br>
-            <strong>Software Engineer (July 2024 – Present)</strong>
+            <strong>Software Engineer (July 2024 – Present)</strong><br>
+            <strong>Lead Software Engineer on a current project (Nov 2025 - Present)</strong>
         </div>
         <ul>
+            <li><strong>Leadership:</strong> Managed a team of external QA testers, streamlining the end-to-end testing process for core system modules. Leading a development team to integrate high-impact features into the production environment</li>
             <li><strong>Feature Development & Bug Resolution:</strong> Engineered solutions and resolved high-priority tickets across Java, C/C++, and JavaScript codebases, ensuring seamless functionality and system stability.</li>
             <li><strong>Infrastructure & DevOps:</strong> Leveraged Linux, Maven, Redis, and Docker to architect and support deployment workflows, significantly enhancing system performance and environment consistency.</li>
             <li><strong>Agile Collaboration:</strong> Actively contributed to an Agile Scrum environment, driving value through sprint planning, daily stand-ups, and backlog refinement using Jira and Confluence.</li>
@@ -54,26 +52,32 @@
     <div class="scroll-block">
         <h2 class="title">Education</h2>
         <div style="margin-bottom: 5px;">
-            <strong>Lancaster University | Lancaster, UK</strong><br>
-            <strong>Bachelor of Science in Software Engineering - First Class classification	(Sept 2020 – July 2024)</strong>
+            <strong>Lancaster University - Lancaster, UK</strong><br>
+            <strong>Bachelor of Science in Software Engineering - First Class classification (Sept 2020 – July 2024)</strong><br>
+
+            <br><strong>The Crest Academy - London, UK</strong><br>
+            <strong>A-levels in ICT (A*), Maths (A), Chemistry (B) - 144 UCAS Points (Sept 2018 - July 2019)</strong>
         </div>
     </div>
 
     <div class="scroll-block">
         <h2 class="title">Personal Projects</h2>
-        <div style="margin-bottom: 10px;">
-            <strong>Mobile Application</strong>
-        </div>
-
+        <br><div class="project-title-wrapper">
+        <a href="projects.html?project=MobileApp" class="project-link">
+            Mobile Application <span class="link-icon">↗</span>
+        </a>
+    </div>
         <ul>
             <li>Led a 6-person team to deliver a social mobile app, managing the lifecycle from ideation to deployment.</li>
             <li>Architected a scalable backend using Spring Boot, MySQL, and Redis for high-performance data handling.</li>
             <li>Managed cross-functional workflows using Agile/Scrum, translating business goals into technical user stories.</li>
         </ul>
 
-        <br><div style="margin-bottom: 10px;">
-            <strong>Smart Home System – Raspberry Pi</strong>
-        </div>
+        <br><div class="project-title-wrapper">
+        <a href="projects.html?project=SmartSystem" class="project-link">
+            Smart Home System – Raspberry Pi <span class="link-icon">↗</span>
+        </a>
+    </div>
 
         <ul>
             <li><strong>Full-Stack Integration:</strong> Developed a cross-platform smart home system featuring a high-performance C++ backend for hardware interfacing and a React.js frontend for user control.</li>
@@ -81,11 +85,22 @@
             <li><strong>Asynchronous Communication:</strong> Built a communication bridge between the low-level backend and the web interface, focusing on efficient data transmission and low-latency command execution.</li>
             <li><strong>Modern Web UI:</strong> Designed a responsive dashboard in React, allowing users to monitor system status and trigger hardware events through an intuitive, component-based interface.</li>
         </ul>
+
+        <br><div class="project-title-wrapper">
+            <a href="projects.html?project=ChessGame" class="project-link">
+                Chess Game <span class="link-icon">↗</span>
+            </a>
+        </div>
+        <ul>
+            <li>Engineered a fully functional chess engine, utilizing Object-Oriented Programming (OOP) to model complex game entities and enforce standard international chess regulations.</li>
+            <li>Designed a modular architecture using Inheritance and Abstraction to manage diverse piece behaviors, ensuring the codebase is highly extensible for future feature sets</li>
+        </ul>
+
     </div>
 
 </section>
 <footer style="text-align: center; padding: 100px 0; color: #555;">
-    <p>© 2026 Issa Shaaban</p>
+    <p>© Issa Shaaban 2026 </p>
 </footer>
 </body>
 </html>

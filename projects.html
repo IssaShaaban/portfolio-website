@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Developer Portfolio</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="style.css">
     <script src="navbar.js" defer></script>
 </head>
@@ -11,12 +11,42 @@
 
 <main-navbar></main-navbar>
 
-<header class="hero">
-    <h1>My Projects</h1>
-</header>
+<main class="projects-wrapper">
+    <nav class="project-tabs">
+        <button class="tab-link active" onclick="switchProject(event, 'MobileApp')">Mobile Application</button>
+        <button class="tab-link" onclick="switchProject(event, 'SmartSystem')">Smart Home System</button>
+        <button class="tab-link" onclick="switchProject(event, 'ChessGame')">Chess Game</button>
+    </nav>
 
-<main>
+    <section id="MobileApp" class="project-view active">
+        <div class="project-header">
+            <h2>Mobile Application</h2>
+            <div class="tech-stack">
+                <span>Java</span> <span>SpringBoot</span> <span>Redis</span>
+                <span>Dart (Flutter) </span><span>MVC Architecture</span><span>MySQL</span>
+                <span>Docker</span><span>GitHub</span><span>AWS</span><span>GCP</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="SmartSystem" class="project-view">
+        <div class="project-header">
+            <h2>Smart Home System</h2>
+            <div class="tech-stack"><span>Raspberry Pi</span> <span>C++</span> <span>React.js</span><span>SQL</span></div>
+        </div>
+    </section>
+
+    <section id="ChessGame" class="project-view">
+        <div class="project-header">
+            <h2>Chess Game</h2>
+            <div class="tech-stack"><span>Java</span> <span>SwingUI</span> <span>OOP</span></div>
+        </div>
+    </section>
 </main>
+
+<footer style="text-align: center; padding: 100px 0; color: #555;">
+    <p>© Issa Shaaban 2026 </p>
+</footer>
 
 </body>
 </html>
