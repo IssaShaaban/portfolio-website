@@ -102,6 +102,33 @@ body {
     margin-bottom: 20px;
 }
 
+.project-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .project-details {
+        flex-direction: column;
+    }
+    .project-img {
+        max-width: 100%;
+    }
+}
+
+
 .title {
     text-align: center;
     margin: 40px 0;
@@ -161,7 +188,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 3px;
     border-bottom: 1px solid #333;
     padding-bottom: 20px;
 }
@@ -195,7 +222,7 @@ body {
 
 .project-view.active {
     display: block;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
