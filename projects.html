@@ -22,24 +22,46 @@
         <div class="project-header">
             <h2>Mobile Application</h2>
             <div class="tech-stack">
-                <span>Java</span> <span>SpringBoot</span> <span>Redis</span>
-                <span>Dart (Flutter) </span><span>MVC Architecture</span><span>MySQL</span>
+                <span>Java</span> <span>SpringBoot</span><span>Redis</span>
+                <span>Dart (Flutter)</span><span>MVC Architecture</span><span>MySQL</span>
                 <span>Docker</span><span>GitHub</span><span>AWS</span><span>GCP</span>
-            </div>
+            </div><br>
+            <p>aaaaa</p>
         </div>
     </section>
 
     <section id="SmartSystem" class="project-view">
         <div class="project-header">
             <h2>Smart Home System</h2>
-            <div class="tech-stack"><span>Raspberry Pi</span> <span>C++</span> <span>React.js</span><span>SQL</span></div>
+            <div class="tech-stack"><span>Raspberry Pi</span><span>C++</span><span>React.js</span><span>SQL</span></div>
+        </div>
+        <br>
+        <img src="ssui.png" alt="Smart Home System" class="project-img" loading="lazy"><br>
+        <br><p>A high-performance web interface to visualize live telemetry from a Raspberry Pi.
+            The system provides real-time updates for temperature (thermometer on the left),
+            humidity (water droplet in the middle),
+            and atmospheric pressure (gauge on the right) using a WebSocket pipeline,
+            ensuring sub-second latency between hardware sensors and the browser.</p><br>
+
+        <div class="project-details">
+            <img src="becode.png" alt="Backend Code" class="project-img" loading="lazy">
+            <div class="project-description">
+                <p>
+                    This screenshot displays the core C++ logic running on the Raspberry Pi.
+                    The main.cpp file consists of class initialisation of the ServerConnection (which uses the libwebsockets
+                    library to connect to the frontend), the Bme280Sensor (uses the GIPO pins located on the raspberry pi) along with
+                    database initialisation which starts up a SQLite database. The request class represents a typical request design consisting of
+                    an id, time of the request, source and destination, request type (get, post, getAll, close). This request
+                    is converted from a JSON format coming from the frontend.
+                </p>
+            </div>
         </div>
     </section>
 
     <section id="ChessGame" class="project-view">
         <div class="project-header">
             <h2>Chess Game</h2>
-            <div class="tech-stack"><span>Java</span> <span>SwingUI</span> <span>OOP</span></div>
+            <div class="tech-stack"><span>Java</span><span>SwingUI</span><span>OOP</span></div>
         </div>
     </section>
 </main>
