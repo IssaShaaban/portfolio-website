@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | Issa Shaaban</title>
+    <meta name="description" content="Projects by Issa Shaaban: Wyst, a Raspberry Pi smart home system and a Java chess game.">
+    <meta name="theme-color" content="#0e1014">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="navbar.js" defer></script>
 </head>
@@ -11,84 +16,204 @@
 
 <main-navbar></main-navbar>
 
-<main class="projects-wrapper">
-    <nav class="project-tabs">
-        <button class="tab-link active" onclick="switchProject(event, 'MobileApp')">Mobile Application</button>
-        <button class="tab-link" onclick="switchProject(event, 'SmartSystem')">Smart Home System</button>
-        <button class="tab-link" onclick="switchProject(event, 'ChessGame')">Chess Game</button>
-    </nav>
+<main class="container">
+    <div class="project-tabs" role="tablist" aria-label="Projects">
+        <button class="tab-link active" role="tab" aria-selected="true" data-project="Wyst">Wyst</button>
+        <button class="tab-link" role="tab" aria-selected="false" data-project="SmartSystem">Smart Home System</button>
+        <button class="tab-link" role="tab" aria-selected="false" data-project="ChessGame">Chess Game</button>
+    </div>
 
-    <section id="MobileApp" class="project-view active">
+    <!-- ===== Wyst ===== -->
+    <section id="Wyst" class="project-view wyst active">
         <div class="project-header">
-            <h2>Mobile Application</h2>
+            <span class="pill"><span class="dot"></span> Out now on Android &amp; iPhone · Starting in Manchester</span>
+            <h2>Wyst</h2>
+            <p class="lede">
+                It starts with a shared interest. Wyst makes it easier to meet people through
+                shared interests, events and experiences.
+            </p>
             <div class="tech-stack">
-                <span>Java</span> <span>SpringBoot</span><span>Redis</span>
-                <span>Dart (Flutter)</span><span>MVC Architecture</span><span>MySQL</span>
-                <span>Docker</span><span>GitHub</span><span>AWS</span><span>GCP</span>
-            </div><br>
-            <p><strong>This page is currently in development, check out one of the other pages!</strong></p>
-            <br><img src="underCon.png" alt="Under Construction" class="project-img" loading="lazy">
+                <span>Flutter (Dart)</span><span>Java</span><span>Spring Boot</span><span>MySQL</span>
+                <span>Redis</span><span>Docker</span><span>AWS</span><span>GCP</span>
+            </div>
+            <div class="btn-row">
+                <a href="https://wystapp.org" target="_blank" rel="noopener" class="btn btn-wyst">Visit wystapp.org ↗</a>
+                <a href="https://apps.apple.com/gb/app/id6816698787" target="_blank" rel="noopener" class="btn">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=org.wystapp.app" target="_blank" rel="noopener" class="btn">Google Play</a>
+                <a href="https://www.instagram.com/wystapp/" target="_blank" rel="noopener" class="btn">Instagram</a>
+            </div>
+        </div>
+
+        <div class="prose">
+            <h3>What it is</h3>
+            <p>
+                Wyst is a social app for meeting people nearby. Rather than starting from a profile,
+                it starts from what you like doing: you pick your interests, find small groups built
+                around them, and turn up to local events with people who already have something in
+                common with you.
+            </p>
+            <p>
+                The app is live on the App Store and Google Play, and is launching in Manchester first.
+            </p>
+        </div>
+
+        <div class="project-block">
+            <h3>How it works</h3>
+            <ol class="steps">
+                <li class="card">
+                    <h4>Pick your interests</h4>
+                    <p>Board games, cycling, photography. Your interests become the filters for everything you see.</p>
+                </li>
+                <li class="card">
+                    <h4>Join small groups</h4>
+                    <p>Each group has its own chat, so you can get to know people before meeting them.</p>
+                </li>
+                <li class="card">
+                    <h4>Go to events</h4>
+                    <p>Upcoming events sit alongside your groups, so plans turn into actually meeting up.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="prose">
+            <h3>My role</h3>
+            <ul class="bullets">
+                <li><strong>Team lead:</strong> I lead the six-person team behind Wyst and have managed the project from the first idea through to release on both app stores.</li>
+                <li><strong>Backend architecture:</strong> I designed a scalable backend with Spring Boot, MySQL and Redis, following an MVC structure.</li>
+                <li><strong>Delivery:</strong> We work in Agile/Scrum, and I turn business goals into technical user stories the team can build against.</li>
+            </ul>
+        </div>
+
+        <div class="project-block">
+            <h3>Tech stack</h3>
+            <div class="stack-grid">
+                <div class="card">
+                    <h4>Mobile app</h4>
+                    <div class="tech-stack"><span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span></div>
+                </div>
+                <div class="card">
+                    <h4>Backend</h4>
+                    <div class="tech-stack"><span>Java</span><span>Spring Boot</span><span>MVC Architecture</span></div>
+                </div>
+                <div class="card">
+                    <h4>Data</h4>
+                    <div class="tech-stack"><span>MySQL</span><span>Redis</span></div>
+                </div>
+                <div class="card">
+                    <h4>Infrastructure &amp; tooling</h4>
+                    <div class="tech-stack"><span>Docker</span><span>AWS</span><span>GCP</span><span>GitHub</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="prose">
+            <h3>Find out more</h3>
+            <p>
+                See the app at <a href="https://wystapp.org" target="_blank" rel="noopener">wystapp.org</a>,
+                or follow <a href="https://www.instagram.com/wystapp/" target="_blank" rel="noopener">@wystapp</a> on Instagram.
+            </p>
         </div>
     </section>
 
+    <!-- ===== Smart Home System ===== -->
     <section id="SmartSystem" class="project-view">
         <div class="project-header">
+            <span class="eyebrow">Personal project</span>
             <h2>Smart Home System</h2>
+            <p class="lede">A web interface that shows live readings from sensors attached to a Raspberry Pi.</p>
             <div class="tech-stack"><span>Raspberry Pi</span><span>C</span><span>C++</span><span>React.js</span><span>SQL</span></div>
         </div>
-        <br>
-        <img src="ssui.png" alt="Smart Home System" class="project-img" loading="lazy"><br>
-        <br>
-        <p>A high-performance web interface to visualize live telemetry from a Raspberry Pi.
-            The system provides real-time updates for temperature (thermometer on the left),
-            humidity (water droplet in the middle),
-            and atmospheric pressure (gauge on the right) using a WebSocket pipeline,
-            ensuring sub-second latency between hardware sensors and the browser. The current setup involves
-            user input, which can be any message, but this is set to be changed to specific buttons depending on
-            the data needed by the frontend user.</p>
-        <br>
-        <div class="project-details">
-            <img src="becode.png" alt="Backend Code" class="project-img" loading="lazy">
-            <p>This screenshot displays the core C++ logic running on the Raspberry Pi.
-                The main.cpp file consists of class initialisation of the ServerConnection (which uses the libwebsockets
-                library to connect to the frontend), the Bme280Sensor (uses the GIPO pins located on the raspberry pi) along with
-                database initialisation which starts up a SQLite database. The request class represents a typical request design consisting of
-                an id, time of the request, source and destination, request type (get, post, getAll, close). This request
-                is converted from a JSON format coming from the frontend.</p>
+
+        <figure class="figure">
+            <img src="UpdatedDashboard.png" alt="Smart home dashboard showing temperature, humidity and pressure" class="project-img" loading="lazy">
+            <figcaption>The dashboard: temperature on the left, humidity in the middle and atmospheric pressure on the right.</figcaption>
+        </figure>
+
+        <div class="prose">
+            <h3>The dashboard</h3>
+            <p>
+                A high-performance web interface that visualises live telemetry from a Raspberry Pi.
+                Temperature, humidity and atmospheric pressure update in real time over a WebSocket
+                pipeline, which keeps latency between the hardware sensors and the browser under a second.
+            </p>
         </div>
-        <br>
-        <p><strong>Future additions</strong></p>
-        <ul>
-            <li>Addition of specific buttons (get, post, getAll and close connection)</li>
-            <li>Addition of extra sensors in different rooms</li>
-            <li>Addition of a centralised database raspberry pi</li>
-            <li>Addition of Ui displaying several areas at once</li>
-            <li>Addition of periodic reads from the sensors, and periodic writes to the database</li>
-        </ul>
+
+        <div class="split">
+            <figure class="figure">
+                <img src="becode.png" alt="C++ backend code for the smart home system" class="project-img" loading="lazy">
+                <figcaption>The core C++ logic running on the Raspberry Pi.</figcaption>
+            </figure>
+            <div class="prose">
+                <h3 style="margin-top: 0;">The backend</h3>
+                <p>
+                    <strong>main.cpp</strong> sets up three things: the ServerConnection, which uses the
+                    libwebsockets library to talk to the frontend; the Bme280Sensor, which reads from the
+                    GPIO pins on the Raspberry Pi; and a SQLite database.
+                </p>
+                <p>
+                    The Request class follows a typical request design. It holds an id, the time of the
+                    request, a source and destination, and a request type (get, post, getAll or close).
+                    Each request arrives from the frontend as JSON and is converted into this class.
+                </p>
+            </div>
+        </div>
+
+        <div class="prose">
+            <h3>Future additions</h3>
+            <ul class="bullets">
+                <li>Specific buttons for get, post, getAll and close connection</li>
+                <li>Extra sensors in different rooms</li>
+                <li>A centralised database on its own Raspberry Pi</li>
+                <li>A UI that displays several areas at once</li>
+                <li>Periodic reads from the sensors, and periodic writes to the database</li>
+            </ul>
+        </div>
     </section>
 
+    <!-- ===== Chess Game ===== -->
     <section id="ChessGame" class="project-view">
         <div class="project-header">
+            <span class="eyebrow">Personal project</span>
             <h2>Chess Game</h2>
-            <div class="tech-stack"><span>Java</span><span>SwingUI</span><span>OOP</span></div>
-            <br>
-            <p>I started this project back in September 2024, with the aim of improving and solidifying my Java skills. Although I had got quite a lot done,
-            I have recently decided to re-work some parts of the chess game whenever I get some free time. I have expanded my Java skills since then,
-            and hope to portray this through future commits to this game. I currently have some future implementation ideas that I want to add, which include:</p>
-            <br>
-            <ul>
-                <li>Addition of playable squares for pieces</li>
-                <li>Addition of settings to change board background</li>
-                <li>Addition of En-passant and castling mechanics </li>
-                <li>Addition of options for pawn changes when a pawn reaches the end</li>
-            </ul>
-            <br><img src="chessgame.png" alt="Chess Game" class="project-img" loading="lazy">
+            <p class="lede">A chess game written in Java with a Swing interface.</p>
+            <div class="tech-stack"><span>Java</span><span>Swing UI</span><span>OOP</span></div>
+        </div>
+
+        <div class="split">
+            <div class="prose">
+                <h3 style="margin-top: 0;">Background</h3>
+                <p>
+                    I started this project in September 2024 to improve and solidify my Java skills.
+                    I got quite a lot done at the time, and I have recently decided to rework parts of
+                    the game whenever I get some free time.
+                </p>
+                <p>
+                    My Java has come a long way since then, and I hope to show that through future
+                    commits to this game.
+                </p>
+
+                <h3>Planned features</h3>
+                <ul class="bullets">
+                    <li>Highlighting the playable squares for each piece</li>
+                    <li>Settings to change the board background</li>
+                    <li>En passant and castling</li>
+                    <li>A choice of piece when a pawn reaches the end of the board</li>
+                </ul>
+            </div>
+            <figure class="figure">
+                <img src="chessgame.png" alt="The chess game board" class="project-img" loading="lazy">
+                <figcaption>The current board, built with Swing.</figcaption>
+            </figure>
         </div>
     </section>
 </main>
 
-<footer style="text-align: center; padding: 100px 0; color: #555;">
-    <p>© Issa Shaaban 2026 </p>
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="https://github.com/issashaaban" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/issashaaban" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p>© Issa Shaaban 2026</p>
 </footer>
 
 </body>
