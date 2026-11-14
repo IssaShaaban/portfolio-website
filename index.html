@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issa Shaaban Developer Portfolio</title>
+    <title>Issa Shaaban | Software Engineer</title>
+    <meta name="description" content="Portfolio of Issa Shaaban, a software engineer at Ovarro and the developer behind Wyst.">
+    <meta name="theme-color" content="#0e1014">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="navbar.js" defer></script>
 </head>
@@ -11,22 +16,65 @@
 
 <main-navbar></main-navbar>
 
-<header class="hero">
-    <div class="hero-content">
-        <br>
-        <img src="issa.jpeg" alt="Issa Shaaban" class="profile-pic">
-        <h1>Issa Shaaban</h1>
-        <p class="tagline">Software Engineer @ Ovarro</p>
-
-        <div class="contact-links">
-            <a href="https://github.com/issashaaban" target="_blank" class="hero-btn">GitHub</a>
-            <a href="https://linkedin.com/in/issashaaban" target="_blank" class="hero-btn">LinkedIn</a>
+<main class="container">
+    <header class="hero">
+        <div class="hero-copy">
+            <span class="eyebrow">Software Engineer @ Ovarro</span>
+            <h1>Issa Shaaban</h1>
+            <p class="lede">
+                I build backend systems and the products that sit on top of them, working across
+                Java, C/C++ and JavaScript. Outside of work I lead the team behind Wyst, a social
+                app for meeting people through shared interests.
+            </p>
+            <div class="btn-row">
+                <a href="projects.html" class="btn btn-primary">View projects</a>
+                <a href="cv.html" class="btn">Read my CV</a>
+                <a href="https://github.com/issashaaban" target="_blank" rel="noopener" class="btn">GitHub</a>
+                <a href="https://linkedin.com/in/issashaaban" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+            </div>
         </div>
-    </div>
-</header>
+        <div class="hero-art">
+            <img src="issa.jpeg" alt="Issa Shaaban" class="profile-pic">
+        </div>
+    </header>
 
-<footer style="text-align: center; padding: 100px 0; color: #555;">
-    <p>© Issa Shaaban 2026 </p>
+    <section class="section reveal">
+        <h2 class="section-title">Featured work</h2>
+        <div class="work-grid">
+            <a href="projects.html?project=Wyst" class="card work-card featured">
+                <span class="pill"><span class="dot"></span> Out now on Android &amp; iPhone</span>
+                <h3>Wyst <span class="link-icon">↗</span></h3>
+                <p>
+                    A social app that makes it easier to meet people nearby through shared interests,
+                    small groups and local events. Built by a team of six that I lead, from the first
+                    idea through to release on both app stores.
+                </p>
+                <div class="tech-stack">
+                    <span>Flutter</span><span>Spring Boot</span><span>MySQL</span><span>Redis</span><span>AWS</span>
+                </div>
+            </a>
+
+            <a href="projects.html?project=SmartSystem" class="card work-card">
+                <h3>Smart Home System <span class="link-icon">↗</span></h3>
+                <p>Live temperature, humidity and pressure readings from a Raspberry Pi, streamed to a React dashboard over WebSockets.</p>
+                <div class="tech-stack"><span>C++</span><span>Raspberry Pi</span><span>React.js</span></div>
+            </a>
+
+            <a href="projects.html?project=ChessGame" class="card work-card">
+                <h3>Chess Game <span class="link-icon">↗</span></h3>
+                <p>A chess game written in Java with a Swing interface, modelled with object-oriented design.</p>
+                <div class="tech-stack"><span>Java</span><span>Swing</span><span>OOP</span></div>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="https://github.com/issashaaban" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/issashaaban" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p>© Issa Shaaban 2026</p>
 </footer>
 
 </body>
